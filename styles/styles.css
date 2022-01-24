@@ -10,8 +10,9 @@ body {
 }
 
 h1 {
-    font-size: 32px;
-    margin: 16px 0;
+    font-size: 34px;
+    margin: 17px 0 19px;
+    line-height: 36px;
     font-weight: 500;
 }
 
@@ -20,7 +21,7 @@ p {
     font-size: 18px;
     line-height: 1.501;
     font-weight: 400;
-    letter-spacing: .012em;
+    letter-spacing: .001em;
     font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
 }
 
@@ -160,7 +161,7 @@ p {
 
 .main_info {
     overflow: hidden;
-    padding: 0 15px;
+    padding: 47px 15px 0;
 }
 
 .down_subject {
@@ -169,13 +170,14 @@ p {
 }
 
 .down_button {
-    padding: 4px 9px;
+    padding: 5px 10px;
     border-radius: 50px;
     border: none;
-    font-size: 13.2px;
-    font-weight: 200;
+    font-size: 12.5px;
+    font-weight: 100;
     background-color: #066EE7;
     color: rgb(222, 232, 243);
+    font-family: 'SF Pro Text';
 }
 
 /* Sections styles */
