@@ -270,7 +270,13 @@ p {
     min-height: 40px;
 }
 
+.footer_content {
+padding: 0 16px;
+}
+
 .footer_menu_sec {
+    padding: 0;
+    margin: 0;
     list-style: none;
 
 }
@@ -283,6 +289,72 @@ p {
 
 .footer_menu_sec li:nth-child(1) a {
     color: red;
+}
+
+.footer_subinfo {
+    display: block;
+    padding: 27px 0 11px;
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    color:#86868b;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    border-bottom: 1px solid #d2d2d7;
+}
+
+.footer_breadcrumbs {
+    position: relative;
+    border-bottom: 1px solid #d2d2d7;   
+}
+
+.footer_breadcrumbs ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    margin-left: 30px;
+    padding: 0;
+}
+
+.footer_breadcrumbs .main_page {
+    position: absolute;
+    left: 0;
+}
+
+.footer_breadcrumbs li {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.footer_breadcrumbs li a {
+    display: inline-block;
+    color: #515154;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.footer_breadcrumbs li::after {
+    position: absolute;
+    content: "1"; 
+    right: -4px;
+    bottom: 10px;
+}
+
+/* logo fix */
+.footer_breadcrumbs .main_page::after {
+    right: -2px;
+}
+
+.footer_breadcrumbs .main_page a {
+    padding-left: 0;
+}
+/* logo fix */
+
+.footer_breadcrumbs li:last-child::after {
+    content: "";
 }
 
 /* Footer end  */
