@@ -10,8 +10,9 @@ body {
 }
 
 h1 {
-    font-size: 32px;
-    margin: 16px 0;
+    font-size: 34px;
+    margin: 17px 0 19px;
+    line-height: 36px;
     font-weight: 500;
 }
 
@@ -19,9 +20,9 @@ p {
     margin: 4px 0px;
     font-size: 18px;
     line-height: 1.501;
-    font-weight: 400;
-    letter-spacing: .012em;
-    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
+    font-weight: 300;
+    letter-spacing: .001em;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
 .header_block1,
@@ -160,22 +161,24 @@ p {
 
 .main_info {
     overflow: hidden;
-    padding: 0 15px;
+    padding: 47px 16px 0;
 }
 
 .down_subject {
     font-size: 19px;
     font-weight: 500;
+    letter-spacing: 0.02em;
 }
 
 .down_button {
-    padding: 4px 9px;
+    padding: 4.5px 11.5px;
     border-radius: 50px;
     border: none;
-    font-size: 13.2px;
-    font-weight: 200;
+    font-size: 12.2px;
+    font-weight: 300;
     background-color: #066EE7;
-    color: rgb(222, 232, 243);
+    color: rgb(244, 245, 247);
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
 /* Sections styles */
@@ -199,14 +202,15 @@ p {
 
 /* Sections styles end */
 
-
 .btn_1 {
-    margin: 13px 0;
+  margin: 13px 0;
     font-size: 19px;
     line-height: 1.4em;
-    letter-spacing: 0.012em;
+    letter-spacing: 0em;
     color: #06c;
     text-decoration: none;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-weight: 300;
 }
 
 .btn_1::after {
@@ -229,7 +233,7 @@ p {
 .device-screen {
     position: absolute;
     top: 0px;
-    left: 3px;
+    left: 44px;
     width: 288px;
     height: 180px;
     background-size: 100% 100%;
@@ -238,6 +242,11 @@ p {
 .second_info_block {
     margin: 0 12px 0 5px;
 }
+
+.second_info_block__1 {
+    padding: 50px 0 15px;
+}
+
 
 .second_info_block p {
     margin-bottom: 17px;
@@ -248,3 +257,104 @@ p {
     font-weight: 500;
     letter-spacing: .022em;
 }
+
+.laptop_prev figure {
+    margin: 0px;
+    margin-top: 15px;
+}
+
+/* Footer start */
+
+.main_footer {
+    background-color: #f5f5f7;
+    min-height: 40px;
+}
+
+.footer_content {
+padding: 0 16px;
+}
+
+.footer_menu_sec {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+
+.footer_menu_sec li a {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+.footer_menu_sec li:nth-child(1) a {
+    color: red;
+}
+
+.footer_subinfo {
+    display: block;
+    padding: 27px 0 11px;
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    color:#86868b;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    border-bottom: 1px solid #d2d2d7;
+}
+
+.footer_breadcrumbs {
+    position: relative;
+    border-bottom: 1px solid #d2d2d7;   
+}
+
+.footer_breadcrumbs ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    margin-left: 30px;
+    padding: 0;
+}
+
+.footer_breadcrumbs .main_page {
+    position: absolute;
+    left: 0;
+}
+
+.footer_breadcrumbs li {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.footer_breadcrumbs li a {
+    display: inline-block;
+    color: #515154;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.footer_breadcrumbs li::after {
+    position: absolute;
+    content: "1"; 
+    right: -4px;
+    bottom: 10px;
+}
+
+/* logo fix */
+.footer_breadcrumbs .main_page::after {
+    right: -2px;
+}
+
+.footer_breadcrumbs .main_page a {
+    padding-left: 0;
+}
+/* logo fix */
+
+.footer_breadcrumbs li:last-child::after {
+    content: "";
+}
+
+/* Footer end  */
