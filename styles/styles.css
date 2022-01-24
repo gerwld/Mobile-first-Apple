@@ -4,7 +4,9 @@ body {
     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
     font-weight: normal;
     color: #1E1E1E;
-    letter-spacing: 0.012em;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
 }
 
 h1 {
@@ -19,7 +21,7 @@ p {
     line-height: 1.501;
     font-weight: 400;
     letter-spacing: .012em;
-    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
 }
 
 .header_block1,
@@ -42,6 +44,7 @@ p {
     border-bottom: 1px solid rgba(0,0,0,0.16);
     background-color: transparent;
     box-sizing: border-box;
+    z-index: 100;
 }
 
 .header_block2_content {
@@ -156,6 +159,7 @@ p {
 }
 
 .main_info {
+    overflow: hidden;
     padding: 0 15px;
 }
 
@@ -211,4 +215,36 @@ p {
     line-height: 18px;
     margin-left: 5px;
     vertical-align: middle;
+}
+
+.device-macbook-pro-space-grey{   
+    width: 375px;
+    height: 217px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+
+.device-screen {
+    position: absolute;
+    top: 0px;
+    left: 3px;
+    width: 288px;
+    height: 180px;
+    background-size: 100% 100%;
+}
+
+.second_info_block {
+    margin: 0 12px 0 5px;
+}
+
+.second_info_block p {
+    margin-bottom: 17px;
+    font-size: 16.5px;
+}
+
+.second_info_block strong {
+    font-weight: 500;
+    letter-spacing: .022em;
 }
