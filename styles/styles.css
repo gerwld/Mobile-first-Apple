@@ -6,7 +6,7 @@ body {
     color: #1E1E1E;
     line-height: 1.47059;
     font-weight: 400;
-    letter-spacing: -.022em;
+    letter-spacing: .001em;
 }
 
 h1 {
@@ -25,6 +25,12 @@ p {
     font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
+a {
+    color: #06c;
+    letter-spacing: inherit;
+    text-decoration: none;
+}
+
 .header_block1,
 .header_block2_content {
     display: flex;
@@ -38,7 +44,7 @@ p {
 }
 
 .header_block2 {
-    position: fixed;
+    position: absolute;
     width: 100%;
     padding: 0 16px;
     height: 47px;
@@ -46,6 +52,11 @@ p {
     background-color: transparent;
     box-sizing: border-box;
     z-index: 100;
+}
+
+.hebl2_active {
+    position: fixed;
+    top: 0;
 }
 
 .header_block2_content {
@@ -241,6 +252,7 @@ p {
 
 .second_info_block {
     margin: 0 12px 0 5px;
+    padding-bottom: 30px;
 }
 
 .second_info_block__1 {
@@ -293,7 +305,7 @@ padding: 0 16px;
 
 .footer_subinfo {
     display: block;
-    padding: 27px 0 11px;
+    padding: 27px 0 21px;
     font-size: 12px;
     line-height: 1.33337;
     font-weight: 400;
@@ -306,6 +318,7 @@ padding: 0 16px;
 .footer_breadcrumbs {
     position: relative;
     border-bottom: 1px solid #d2d2d7;   
+    padding: 17px 0;
 }
 
 .footer_breadcrumbs ul {
@@ -313,47 +326,55 @@ padding: 0 16px;
     flex-wrap: wrap;
     list-style: none;
     margin: 0;
-    margin-left: 30px;
+    margin-left: 20px;
     padding: 0;
 }
 
 .footer_breadcrumbs .main_page {
     position: absolute;
     left: 0;
+    top: 14px;
+    margin: 0;
+}
+
+.footer_breadcrumbs .logo {
+    display: block;
+    width: 14px;
+    height: 20px;
+    color: transparent;
+    background-image: url("../img/icon_large.svg");
+    background-size: 14px 74px;
 }
 
 .footer_breadcrumbs li {
     position: relative;
     padding: 0;
     margin: 0;
-    margin-right: 10px;
+    margin-left: 25px;
 }
 
 .footer_breadcrumbs li a {
     display: inline-block;
     color: #515154;
-    padding: 10px;
+    padding: 3px 4px 3px 0;
     text-decoration: none;
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    position: relative;
+    z-index: 1;
 }
 
-.footer_breadcrumbs li::after {
+.footer_breadcrumbs li::before {
     position: absolute;
     content: "1"; 
-    right: -4px;
-    bottom: 10px;
+    left: -15px;
+    bottom: -1px;
 }
 
-/* logo fix */
-.footer_breadcrumbs .main_page::after {
-    right: -2px;
-}
-
-.footer_breadcrumbs .main_page a {
-    padding-left: 0;
-}
-/* logo fix */
-
-.footer_breadcrumbs li:last-child::after {
+.footer_breadcrumbs .main_page::before {
     content: "";
 }
 
