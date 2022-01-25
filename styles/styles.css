@@ -9,6 +9,11 @@ body {
     letter-spacing: .001em;
 }
 
+.no-scroll {
+    max-height: 100vh;
+    overflow: hidden;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
@@ -56,6 +61,7 @@ input[type=search]:focus {
 
 .header_mnmenu {
     width: 100%;
+    min-width: 320px;
     width: 100vw;
     height: 0vh!important;
     margin-top: -2px;
@@ -81,6 +87,7 @@ input[type=search]:focus {
 .header_block2 {
     position: absolute;
     width: 100%;
+    min-width: 320px;
     padding: 0 16px;
     height: 47px;
     border-bottom: 1px solid rgba(0,0,0,0.16);
@@ -622,6 +629,7 @@ padding: 0 16px;
 
 .header1_mb_open .header_mnmenu {
     height: 100vh!important;
+    width: 100%;
     opacity: 1;
     background-color: #fff;
 }
@@ -687,3 +695,10 @@ padding: 0 16px;
     transform-origin: center;
 }
 /* Popups & other on mobile end */
+
+
+@media (max-width: 735px){
+    body {
+        min-width: 320px;
+    }
+}
