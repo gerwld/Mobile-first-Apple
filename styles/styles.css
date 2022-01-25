@@ -376,9 +376,12 @@ padding: 0 16px;
 }
 
 .fms_open {
-    /* margin-top: 5px; */
     padding: 0 0 10px;
     background-color: #f5f5f7;
+}
+
+.footer_menu {
+    padding-top: 10px;
 }
 
 .footer_menu_sec li {
@@ -677,8 +680,10 @@ padding: 0 16px;
 
 .header2_mb_open .down_navbtn::before {
     transform: translateX(-1px) rotate(-40deg) translateX(0px);
+    transform-origin: center;
 }
 .header2_mb_open .down_navbtn::after {
     transform: translateX(1px) rotate(220deg) translateX(1px) translateY(-1px);
+    transform-origin: center;
 }
 /* Popups & other on mobile end */
