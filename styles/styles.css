@@ -25,8 +25,8 @@ p {
     margin: 4px 0px;
     font-size: 18px;
     line-height: 1.501;
-    font-weight: 300;
-    letter-spacing: .001em;
+    font-weight: 400;
+    letter-spacing: .009em;
 }
 
 a {
@@ -37,6 +37,10 @@ a {
 
 a.inactive {
     user-select: none;
+}
+
+button {
+    cursor: pointer;
 }
 
 input[type=button]:focus,
@@ -188,8 +192,9 @@ input[type=search]:focus {
     content: '';
     display: block;
     position: absolute;
-    width: 10.5px;
+    width: 11px;
     height: 1px;
+    border-radius: 0.5px;
     background-color: #3a3a3a;
 }
 
@@ -243,7 +248,7 @@ input[type=search]:focus {
 }
 
 .down_subject {
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 500;
     letter-spacing: 0.02em;
 }
@@ -253,7 +258,7 @@ input[type=search]:focus {
     border-radius: 50px;
     border: none;
     font-size: 12.2px;
-    font-weight: 300;
+    font-weight: 400;
     background-color: #066EE7;
     color: rgb(244, 245, 247);
     font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
@@ -264,6 +269,7 @@ input[type=search]:focus {
 .sect_1 {
     display: flex;
     flex-direction: column;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
 .main_section {
@@ -623,4 +629,15 @@ padding: 0 16px;
     transform: translateY(0px);
 }
 
+.down_navbtn::before,
+.down_navbtn::after {
+    transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1),transform-origin 1s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.header2_mb_open .down_navbtn::before {
+    transform: translateX(-1px) rotate(-40deg) translateX(0px);
+}
+.header2_mb_open .down_navbtn::after {
+    transform: translateX(1px) rotate(220deg) translateX(1px) translateY(-1px);
+}
 /* Popups & other on mobile end */
