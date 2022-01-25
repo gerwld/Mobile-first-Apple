@@ -129,6 +129,8 @@ input[type=search]:focus {
     background-color: black;
     left: 16px;
     top: 21px;
+    transition: transform 0.36s cubic-bezier(0.22, 0.08, 0.24, 1) 0.08s;
+    
 }
 
 .mobile-nav::after {
@@ -530,6 +532,8 @@ padding: 0 16px;
     transition: opacity 0.32s cubic-bezier(0.32, 0.08, 0.24, 1) 0.08s;
 }
 
+
+
 .header1_mb_open .header_content {
     background-color: #fff;
 }
@@ -550,5 +554,12 @@ padding: 0 16px;
     opacity: 1;
 }
 
+.header1_mb_open .mobile-nav::before {
+    transform: translateY(3.5px) rotate(40deg);
+}
+
+.header1_mb_open .mobile-nav::after {
+    transform: translateY(-3.5px) rotate(-40deg);
+}
 
 /* Popups & other on mobile end */
