@@ -8,3 +8,7 @@ let downlMenu = document.querySelector('.header_block2');
 function toggleClass(elem, className) {
     elem.classList.toggle(className);
 }
+
+function toggleMenu(elem) {
+    document.querySelector(elem).classList.toggle('fms_open');
+}
