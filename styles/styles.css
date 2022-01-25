@@ -31,7 +31,30 @@ a {
     text-decoration: none;
 }
 
-.header_block1,
+input[type=button]:focus,
+input[type=search]:focus {
+    outline: none!important;
+}
+
+.header_block1 {
+    position: relative;
+    color: #333333;
+    user-select: none;
+}
+
+.header_mnmenu {
+    width: 100%;
+    width: 100vw;
+    height: 0vh!important;
+    margin-top: -2px;
+    position: absolute;
+    background: #fff;
+    top: 50px;
+    z-index: 10000;
+    overflow-y: scroll;
+}
+
+.header_content,
 .header_block2_content {
     display: flex;
     flex-direction: row;
@@ -147,7 +170,6 @@ a {
 
 /* Buttons end */
 
-.main_nav,
 .down_subnav {
     display: none;
     background-color: #fff;
@@ -160,14 +182,27 @@ a {
     list-style: none;
 }
 
+.main_nav {
+    margin: 2px 0 0;
+    padding: 0 40px;
+    border-top: 1px solid #D7D7D7;
+}
+
 .main_menu a {
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
     display: block;
-    padding: 10px 20px;
-    margin-top: 10px;
-    border-bottom: 1px solid #e2e2e2;
-    text-decoration: none;
-    color: #000;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 8.5px 0 8.5px;
+    border-bottom: 1px solid #D7D7D7;
     background-color: #fff;
+    text-decoration: none;
+    color: #333;
+}
+
+.main_menu {
+    margin-top: 4px;
+    opacity: 0;
 }
 
 .main_info {
@@ -441,3 +476,79 @@ padding: 0 16px;
 }
 
 /* Footer end  */
+
+/* Popups & other on mobile */
+
+.header_search {
+    position: relative;
+    padding: 0 10px;
+    height: 22px;
+    overflow: hidden;
+    opacity: 0.5;
+    transform: scaleY(0.3);
+}
+
+.header_search input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px 6px 8px 30px;
+    font-size: 17px;
+    border-radius: 9px;
+    border: none;
+    background-color: #d6d6d6;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-weight: 300;
+    z-index: 100;
+}
+
+.header_search span {
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-size: 16px 44px;
+    background-position: 0px -14px;
+    top: 10px;
+    left: 18px;
+    opacity: 0.8;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='44' viewBox='0 0 16 44'%3E%3Cpath d='M15.27 28.29l-4.06-4.06a6.113 6.113 0 0 0 1.35-3.83c0-3.39-2.76-6.15-6.15-6.15-3.39 0-6.15 2.76-6.15 6.15s2.76 6.15 6.15 6.15c1.43 0 2.75-.5 3.8-1.33l4.06 4.06 1-.99zM6.4 25.33a4.93 4.93 0 0 1-4.92-4.92c0-2.71 2.2-4.92 4.92-4.92s4.92 2.21 4.92 4.92c.01 2.71-2.2 4.92-4.92 4.92z' fill='%23666666'/%3E%3C/svg%3E");
+}
+
+.header_content,
+.header_mnmenu {
+    transition: height 0.38s cubic-bezier(0.32, 0.08, 0.24, 1) 0.08s,
+    opacity 0.32s cubic-bezier(0.32, 0.08, 0.24, 1) 0.08s;
+}
+
+.header_search {
+    transition: opacity 0.22s cubic-bezier(0.32, 0.08, 0.24, 1) 0.08s,
+    height 0.58s cubic-bezier(0.32, 0.08, 0.24, 1) 0.08s,
+    transform 0.36s cubic-bezier(0.22, 0.08, 0.24, 1) 0.08s;
+}
+
+.main_menu {
+    transition: opacity 0.32s cubic-bezier(0.32, 0.08, 0.24, 1) 0.08s;
+}
+
+.header1_mb_open .header_content {
+    background-color: #fff;
+}
+
+.header1_mb_open .header_mnmenu {
+    height: 100vh!important;
+    opacity: 1;
+    background-color: #fff;
+}
+
+.header1_mb_open .header_search {
+    height: 50px;
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.header1_mb_open .main_menu {
+    opacity: 1;
+}
+
+
+/* Popups & other on mobile end */
