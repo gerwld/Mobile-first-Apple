@@ -28,7 +28,7 @@ h1 {
 p {
     font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
     margin: 4px 0px;
-    font-size: 18px;
+    font-size: 17.6px;
     line-height: 1.501;
     font-weight: 400;
     letter-spacing: .009em;
@@ -115,12 +115,23 @@ input[type=search]:focus {
     height: 22px;
 }
 
-.main_info {
-    overflow: hidden;
+.main_info_gl {
+    margin-top: 47px;
+}
+
+.info_wrapper {
+    overflow: visible;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 47px;
     width: 87.5%;
+}
+
+.prev_wrapper {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    overflow: hidden;
 }
 
 .down_subject {
@@ -557,6 +568,10 @@ padding: 0 16px;
     
     /* Header search end  */
     
+    .laptop_prev {
+        margin-left: 30px;
+    }
+
     /* Footer section */
     .footer_menu_sec {
         padding: 0;
@@ -775,17 +790,7 @@ padding: 0 16px;
 }
 
 @media only screen and (max-width: 1068px){
-  
-}
-
-@media only screen and (max-width: 1068px){
-    .typography-headline, h1 {
-        font-size: 40px;
-        line-height: 1.1;
-        font-weight: 500;
-        letter-spacing: 0em;
-        font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-    }
+   
 }
 
 @media only screen and (min-width: 425px){
@@ -805,7 +810,7 @@ padding: 0 16px;
         font-size: 18px;
     }
     /* layout  */
-    .main_info {
+    .info_wrapper {
         margin-left: auto;
         margin-right: auto;
         width: 692px;
@@ -868,6 +873,15 @@ padding: 0 16px;
 
 /* Desktop mediaqueries (main) */
 @media only screen and (min-width: 768px) {
+
+    h1 {
+        font-size: 40px;
+        line-height: 1.1;
+        font-weight: 500;
+        letter-spacing: 0em;
+        font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    }
+
     /* header section */
 
     /* Disable unused buttons */
