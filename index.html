@@ -12,9 +12,9 @@
 </head>
 <body>
     <header class="main_header">
-        <div class="header_block1 header1_mb_open">
+        <div class="header_block1">
             <div class="header_content">
-                <button class="mobile-nav" id="mob_menu1">Main menu</button>
+                <button class="mobile-nav" id="mob_menu1" onclick="toggleClass(mobileMenu, 'header1_mb_open');">Main menu</button>
                 <div class="header_logo">
                     <img src="img/apple-developer-brandmark.svg" alt="Main page">
                 </div>
@@ -39,16 +39,19 @@
             <div class="header_block2">
                 <div class="header_block2_bg"></div>
                 <div class="header_block2_content">
-                    <span class="down_subject">Safari</span>
-                    <button class="down_navbtn">more info</button>
-                    <button class="down_button">Download</button>
+                    <div class="header_block2_section1">
+                        <span class="down_subject">Safari</span>
+                        <button class="down_navbtn" id="mob_menu2" onclick="toggleClass(downlMenu, 'header2_mb_open');">more info</button>
+                        <button class="down_button">Download</button>
+                    </div>
                     <nav class="down_subnav">
-                        <ul class="main_menu download_menu">
-                            <li><a href ="#">Home</a></li>
-                            <li><a href ="#">Home</a></li>
-                            <li><a href ="#">Home</a></li>
-                            <li><a href ="#">Home</a></li>
-                            <li><a href ="#">Home</a></li>
+                        <ul class="download_menu">
+                            <li><a href ="#">Overview</a></li>
+                            <li><a href ="#">Tools</a></li>
+                            <li><a href ="#">Extensions</a></li>
+                            <li><a class="inactive">Preview</a></li>
+                            <li><a href ="#">Resources</a></li>
+                            <li><a href ="#">What’s New</a></li>
                         </ul>
                     </nav>
                 </div>
