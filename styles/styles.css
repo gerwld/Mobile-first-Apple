@@ -49,16 +49,34 @@ body {
     letter-spacing: inherit;
     text-decoration: none;
   }
+
+  a:hover {
+      text-decoration: underline;
+      text-decoration-thickness: 0.15em;
+      text-underline-offset: 0.06em;
+  }
+
+  .main_header a:hover {
+      text-decoration: none;
+  }
   
   a.inactive {
     -webkit-user-select: none;
             user-select: none;
     opacity: 0.6;
-    cursor: not-allowed;
+    cursor: default;
   }
+
+  a.inactive:hover {
+    color: inherit!important;
+}
   
   button {
     cursor: pointer;
+  }
+
+  button:hover {
+      filter: brightness(1.08);
   }
   
   input[type="button"]:focus,
@@ -214,6 +232,7 @@ body {
   /* Sections styles end */
   
   .btn_1 {
+    position: relative;
     margin: 13px 0;
     font-size: 19px;
     line-height: 1.4em;
@@ -227,9 +246,11 @@ body {
   
   .btn_1::after {
     content: "❯";
+    position: absolute;
     font-size: 13px;
     line-height: 18px;
-    margin-left: 5px;
+    right: -15px;
+    bottom: 3px;
     vertical-align: middle;
   }
   
@@ -974,6 +995,10 @@ body {
       font-size: 12px;
       line-height: 22px;
       white-space: nowrap;
+    }
+
+    .download_menu li a:hover {
+        color: #06c;
     }
   
     .header_block2,
