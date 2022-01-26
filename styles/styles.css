@@ -641,7 +641,7 @@ body {
   
     .footer_menu_sec .title {
       padding: 10px 0 10px;
-      font-weight: 300;
+      font-weight: 400;
     }
   
     .footer_menu_sec .title::after {
@@ -742,7 +742,7 @@ body {
   
     /* header2 */
     .header_block2 {
-      transition: height 0.5s cubic-bezier(0.28, 0.11, 0.32, 1) 0.4s,
+      transition: height 0.45s cubic-bezier(0.28, 0.11, 0.32, 1) 0.4s,
         visibility 0.3s;
     }
   
@@ -830,6 +830,7 @@ body {
     body {
       min-width: 320px;
     }
+
   }
   
   @media only screen and (max-width: 1068px) {
