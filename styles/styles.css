@@ -633,7 +633,7 @@ body {
     }
   
     .footer_menu_sec li a {
-      display: block;
+      display: inline-block;
       padding: 5px 12px;
       color: #69696d;
       text-decoration: none;
