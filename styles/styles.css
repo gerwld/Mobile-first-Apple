@@ -77,7 +77,7 @@ input[type=search]:focus {
     justify-content: space-between;
     align-items: center;
     height: 50px;
-    z-index: 100;
+    z-index: 1000;
     position: relative;
     background-color: #f3f3f3;
 }
