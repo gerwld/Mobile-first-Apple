@@ -12,33 +12,35 @@
 </head>
 <body>
     <header class="main_header">
-        <div class="header_block1">
-            <div class="header_content">
-                <button class="mobile-nav" id="mob_menu1" onclick="toggleClass(mobileMenu, 'header1_mb_open', true);">Main menu</button>
-                <div class="header_logo">
-                    <img src="img/apple-developer-brandmark.svg" alt="Main page">
+        <div class="header_bg1">
+            <div class="header_block1 content-wrapper">
+                <div class="header_content">
+                    <button class="mobile-nav" id="mob_menu1" onclick="toggleClass(mobileMenu, 'header1_mb_open', true);">Main menu</button>
+                    <div class="header_logo">
+                        <img src="img/apple-developer-brandmark.svg" alt="Main page">
+                    </div>
                 </div>
-            </div>
-            <div class="header_mnmenu">
-                <div class="header_search">
-                    <input type="search" placeholder="Search" id="header_search">
-                    <span class="search-ic"></span>
+                <div class="header_mnmenu">
+                    <div class="header_search">
+                        <input type="search" placeholder="Search" id="header_search">
+                        <span class="search-ic"></span>
+                    </div>
+                    <nav class="main_nav">
+                        <ul class="main_menu">
+                            <li><a href ="#">Discover</a></li>
+                            <li><a href ="#">Design</a></li>
+                            <li><a href ="#">Develop</a></li>
+                            <li><a href ="#">Distribute</a></li>
+                            <li><a href ="#">Support</a></li>
+                            <li><a href ="#">Account</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav class="main_nav">
-                    <ul class="main_menu">
-                        <li><a href ="#">Discover</a></li>
-                        <li><a href ="#">Design</a></li>
-                        <li><a href ="#">Develop</a></li>
-                        <li><a href ="#">Distribute</a></li>
-                        <li><a href ="#">Support</a></li>
-                        <li><a href ="#">Account</a></li>
-                    </ul>
-                </nav>
             </div>
         </div>
             <div class="header_block2">
                 <div class="header_block2_bg"></div>
-                <div class="header_block2_content">
+                <div class="header_block2_content content-wrapper">
                     <div class="header_block2_section1">
                         <span class="down_subject">Safari</span>
                         <button class="down_navbtn" id="mob_menu2" onclick="toggleClass(downlMenu, 'header2_mb_open');">more info</button>
@@ -92,7 +94,7 @@
         </section>
     </main>
     <footer class="main_footer">
-        <div class="footer_content">
+        <div class="footer_content content-wrapper">
         <span class="footer_subinfo">Safari Technology Preview requires a Mac running macOS Mojave v10.14 or later.</span>
         <nav class="footer_breadcrumbs">    
             <ul>
@@ -148,19 +150,21 @@
                 <li class="elem"><a href="#">Marketing Resources</a></li>
                 <li class="elem"><a href="#">Trademark Licensing</a></li>
             </ul>
-            <ul class="footer_menu_sec fms5">
-                <li class="title" onclick="toggleMenu('.fms5');">Support</li>
-                <li class="elem"><a href="#">Articles</a></li>
-                <li class="elem"><a href="#">Developer Forums</a></li>
-                <li class="elem"><a href="#">Feedback & Bug Reporting</a></li>
-                <li class="elem"><a href="#">System Status</a></li>
-                <li class="elem"><a href="#">Contact Us</a></li>
-            </ul>
-            <ul class="footer_menu_sec fms6">
-                <li class="title" onclick="toggleMenu('.fms6');">Account</li>
-                <li class="elem"><a href="#">Certificates, Identifiers & Profiles</a></li>
-                <li class="elem"><a href="#">App Store Connect</a></li>
-            </ul>
+            <div class="group-1">
+                <ul class="footer_menu_sec fms5">
+                    <li class="title" onclick="toggleMenu('.fms5');">Support</li>
+                    <li class="elem"><a href="#">Articles</a></li>
+                    <li class="elem"><a href="#">Developer Forums</a></li>
+                    <li class="elem"><a href="#">Feedback & Bug Reporting</a></li>
+                    <li class="elem"><a href="#">System Status</a></li>
+                    <li class="elem"><a href="#">Contact Us</a></li>
+                </ul>
+                <ul class="footer_menu_sec fms6">
+                    <li class="title" onclick="toggleMenu('.fms6');">Account</li>
+                    <li class="elem"><a href="#">Certificates, Identifiers & Profiles</a></li>
+                    <li class="elem"><a href="#">App Store Connect</a></li>
+                </ul>
+            </div>
         </nav>
         <p class="news_up_footer">To view the latest developer news, visit <a href="#">News and Updates</a>.</p>
         <div class="footer_bottom_sec">

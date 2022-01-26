@@ -56,6 +56,12 @@ input[type=search]:focus {
     outline: none!important;
 }
 
+.content-wrapper {
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .header_block1 {
     position: relative;
     color: #333333;
@@ -71,6 +77,14 @@ input[type=search]:focus {
     height: 50px;
     z-index: 100;
     position: relative;
+    background-color: #f3f3f3;
+}
+
+.header_block2_content {
+    position: relative;
+}
+
+.header_bg1 {
     background-color: #f3f3f3;
 }
 
@@ -138,9 +152,18 @@ input[type=search]:focus {
 }
 
 .down_subject {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 500;
-    letter-spacing: 0.02em;
+    line-height: 1.14286;
+    letter-spacing: .011em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    cursor: default;
+    display: block;
+    float: left;
+    margin: 14px 0 -14px;
+    padding: 0;
+    height: 52px;
+    white-space: nowrap;
 }
 
 .down_button {
@@ -918,9 +941,8 @@ padding: 0 16px;
     .down_subnav {
         position: absolute;
         top: 10px;
-        right: 20px;
+        right: 110px;
         z-index: 100;
-        margin-right: 110px;
     }
 
     .download_menu li {
@@ -933,22 +955,27 @@ padding: 0 16px;
         white-space: nowrap;
     }
 
-    .header_block2 {
+    .header_block2,
+    .footer_content,
+    .header_block1 {
         padding: 0 22px;
     }
     .header_block1 .header_content {
-        padding-left: 22px;
         flex: 0.21;
     }
     .header_block1 .header_mnmenu {
-        padding-right: 22px;
     }
+
 
     .header_block1 {
         display: flex;
         justify-content: space-between;
         height: 45px;
         background-color: #f3f3f3;
+    }
+
+    .down_subject {
+        font-size: 21px;
     }
 
     /* Search */
@@ -1007,4 +1034,108 @@ padding: 0 16px;
         margin-left: 4%;
     }
 
+    .header_block2,
+    .header_block2_section1 {
+        height: 51px;
+    }
+
+    /* Footer */
+
+    .footer_menu_sec {
+        flex: 1;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        border-bottom: none;
+    }
+
+    .footer_breadcrumbs {
+        border-bottom: none;
+    }
+
+    .footer_menu_sec li a {
+        overflow-wrap: break-word;
+    }
+
+    .footer_menu_sec .elem a {
+        color: #6c6c70!important;
+        font-size: 12px;
+    }
+
+    .footer_menu_sec .title {
+        font-size: 12px;
+        font-weight: 500;
+        color: #000000!important;
+    }
+
+    .footer_menu_sec li {
+        margin-bottom: 9.5px;
+    }
+
+    .footer_menu_sec {
+        margin-right: 10px;
+    }
+
+    .footer_menu_sec:nth-last-child(1) {
+        margin-right: 0;
+    }
+
+    .footer_menu_sec.fms6 {
+        margin-top: 20px;
+    }
+
+    .footer_menu {
+        display: flex;
+        font-size: 12px;
+    }
+
+    .group-1 {
+        max-width: 180px;
+    }
+
+    .footer_bottom_sec {
+        border-top: 1px solid rgb(210, 210, 215);
+        padding-top: 6px;
+    }
+
+}
+
+@media only screen and (min-width: 1069px) {
+    body {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    p {
+        font-size: 19px;
+    }
+
+    .info_wrapper {
+        flex-basis: 83.33333%;
+        max-width: 980px;
+        width: 83.33333%;
+    }
+
+    .device-macbook-pro-space-grey {
+        width: 984px;
+        height: 576px;
+    }
+
+    .image-hero-screen {
+        background-image: url(../img/screen-hero-large_2x.jpg)!important;
+    }
+
+    .device-screen {
+        top: 25px;
+        left: 115px;
+        width: 754px;
+        height: 471px;
+    }
+
+    .main_section {
+        padding-top: 3.5em;
+    }
 }
