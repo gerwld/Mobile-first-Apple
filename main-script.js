@@ -1,5 +1,4 @@
-// 2-nd header float logic
-
+// 2-nd header float
 window.addEventListener('scroll', scrollLoop, false);
 
 function scrollLoop() {

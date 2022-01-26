@@ -68,7 +68,7 @@ body {
   }
 
   a.inactive:hover {
-    color: inherit;
+    color: inherit!important;
 }
 
 .search-ic:hover {
