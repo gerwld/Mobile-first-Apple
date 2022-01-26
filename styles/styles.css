@@ -45,6 +45,8 @@ a {
 
 a.inactive {
     user-select: none;
+    opacity: 0.6;
+    cursor:not-allowed;
 }
 
 button {
@@ -963,9 +965,6 @@ padding: 0 16px;
     .header_block1 .header_content {
         flex: 0.21;
     }
-    .header_block1 .header_mnmenu {
-    }
-
 
     .header_block1 {
         display: flex;
@@ -1137,5 +1136,10 @@ padding: 0 16px;
 
     .main_section {
         padding-top: 3.5em;
+    }
+
+    .second_info_block p {
+        font-size: 16.5px;
+        line-height: 150%;
     }
 }
