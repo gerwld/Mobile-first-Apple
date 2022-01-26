@@ -678,7 +678,7 @@ body {
       transform: rotate(45deg);
     }
     /* Footer section end */
-  
+
     .header1_mb_open .header_content {
       background-color: #fff;
     }
@@ -763,13 +763,19 @@ body {
     .header2_mb_open .header_block2_bg {
       background-color: rgba(255, 255, 255, 0.9);
     }
-  
+
+    .download_menu,
+    .down_subnav {
+        height: 0px;
+        visibility: hidden;
+    }
+
     .header2_mb_open .download_menu {
-      visibility: visible;
-      height: 350px;
-      opacity: 1;
-      height: auto;
-      transform: translateY(0px);
+        visibility: visible;
+        height: 350px;
+        height: auto;
+        opacity: 1;
+        transform: translateY(0px);
     }
   
     .header2_mb_open .download_menu li a {
