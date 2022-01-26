@@ -155,6 +155,7 @@ body {
   
   .prev_wrapper {
     width: 100vw;
+    min-width: 320px;
     display: flex;
     justify-content: center;
     overflow: hidden;

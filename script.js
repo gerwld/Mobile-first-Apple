@@ -14,5 +14,5 @@ function toggleClass(elem, className, noScroll) {
 }
 
 function toggleMenu(elem) {
-    document.querySelector(elem).classList.toggle('fms_open');
+    document.querySelector('.' + elem).classList.toggle('fms_open');
 }
