@@ -155,6 +155,7 @@ body {
   
   .prev_wrapper {
     width: 100vw;
+    min-width: 320px;
     display: flex;
     justify-content: center;
     overflow: hidden;
@@ -640,7 +641,7 @@ body {
   
     .footer_menu_sec .title {
       padding: 10px 0 10px;
-      font-weight: 300;
+      font-weight: 400;
     }
   
     .footer_menu_sec .title::after {
@@ -678,7 +679,7 @@ body {
       transform: rotate(45deg);
     }
     /* Footer section end */
-  
+
     .header1_mb_open .header_content {
       background-color: #fff;
     }
@@ -741,7 +742,7 @@ body {
   
     /* header2 */
     .header_block2 {
-      transition: height 0.5s cubic-bezier(0.28, 0.11, 0.32, 1) 0.4s,
+      transition: height 0.45s cubic-bezier(0.28, 0.11, 0.32, 1) 0.4s,
         visibility 0.3s;
     }
   
@@ -763,13 +764,19 @@ body {
     .header2_mb_open .header_block2_bg {
       background-color: rgba(255, 255, 255, 0.9);
     }
-  
+
+    .download_menu,
+    .down_subnav {
+        height: 0px;
+        visibility: hidden;
+    }
+
     .header2_mb_open .download_menu {
-      visibility: visible;
-      height: 350px;
-      opacity: 1;
-      height: auto;
-      transform: translateY(0px);
+        visibility: visible;
+        height: 350px;
+        height: auto;
+        opacity: 1;
+        transform: translateY(0px);
     }
   
     .header2_mb_open .download_menu li a {
@@ -823,6 +830,7 @@ body {
     body {
       min-width: 320px;
     }
+
   }
   
   @media only screen and (max-width: 1068px) {
