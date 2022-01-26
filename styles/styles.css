@@ -560,7 +560,6 @@ body {
     }
 
     .main_nav_wrapper {
-        flex: 1;
         border-top: 1px solid #d7d7d7;
         height: calc(100vh - 100px);
         overflow-y: scroll;
@@ -972,6 +971,9 @@ body {
   
     /* header section */
   
+    .main_nav_wrapper {
+        flex: 1;
+    }
     /* Disable unused buttons */
     .down_navbtn,
     .mobile-nav {
