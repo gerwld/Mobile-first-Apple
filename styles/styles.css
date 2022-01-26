@@ -49,20 +49,39 @@ body {
     letter-spacing: inherit;
     text-decoration: none;
   }
+
+  a:hover {
+      text-decoration: underline;
+      text-decoration-thickness: 0.15em;
+      text-underline-offset: 0.06em;
+  }
+
+  .main_header a:hover {
+      text-decoration: none;
+  }
   
   a.inactive {
     -webkit-user-select: none;
             user-select: none;
     opacity: 0.6;
-    cursor: not-allowed;
+    cursor: default;
   }
+
+  a.inactive:hover {
+    color: inherit!important;
+}
   
   button {
     cursor: pointer;
   }
+
+  button:hover {
+      filter: brightness(1.08);
+  }
   
   input[type="button"]:focus,
-  input[type="search"]:focus {
+  input[type="search"]:focus,
+  button:focus {
     outline: none !important;
   }
   
@@ -213,6 +232,7 @@ body {
   /* Sections styles end */
   
   .btn_1 {
+    position: relative;
     margin: 13px 0;
     font-size: 19px;
     line-height: 1.4em;
@@ -226,9 +246,11 @@ body {
   
   .btn_1::after {
     content: "❯";
+    position: absolute;
     font-size: 13px;
     line-height: 18px;
-    margin-left: 5px;
+    right: -15px;
+    bottom: 3px;
     vertical-align: middle;
   }
   
@@ -501,9 +523,9 @@ body {
   
     /* Header menu */
   
-    .down_subnav {
+    /* .down_subnav {
       padding: 5px 20px 20px 25px;
-    }
+    } */
     .header_mnmenu {
       width: 100%;
       min-width: 320px;
@@ -586,7 +608,7 @@ body {
       height: 22px;
       overflow: hidden;
       opacity: 0.5;
-      transform: scaleY(0.3);
+      transform: scaleY(0.5);
     }
   
     .header_search input {
@@ -633,7 +655,7 @@ body {
     }
   
     .footer_menu_sec li a {
-      display: block;
+      display: inline-block;
       padding: 5px 12px;
       color: #69696d;
       text-decoration: none;
@@ -747,13 +769,13 @@ body {
     }
   
     .download_menu {
+      padding: 5px 20px 20px 25px;
       position: relative;
-      visibility: hidden;
       z-index: 100;
       opacity: 0;
       overflow: hidden;
       transition: 0.8s cubic-bezier(0.28, 0.11, 0.32, 1) 0.4s;
-      transition-property: transform, opacity;
+      transition-property: transform, opacity, height;
       transform: translateY(-20px);
     }
   
@@ -765,16 +787,19 @@ body {
       background-color: rgba(255, 255, 255, 0.9);
     }
 
-    .download_menu,
     .down_subnav {
-        height: 0px;
-        visibility: hidden;
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 0.45s cubic-bezier(0.28, 0.11, 0.32, 1) 0.4s,
+        visibility 0.3s;
+    }
+
+    .header2_mb_open .down_subnav {
+        max-height: 300px;
     }
 
     .header2_mb_open .download_menu {
-        visibility: visible;
-        height: 350px;
-        height: auto;
+        max-height: 350px;
         opacity: 1;
         transform: translateY(0px);
     }
@@ -844,7 +869,7 @@ body {
   
   @media only screen and (min-width: 736px) and (max-width: 1068px) {
     body {
-      min-width: 768px;
+      min-width: 736px;
     }
   }
   
@@ -959,7 +984,7 @@ body {
       position: absolute;
       top: 9px;
       right: 110px;
-      z-index: 100;
+      z-index: 1000;
     }
   
     .download_menu li {
@@ -970,6 +995,10 @@ body {
       font-size: 12px;
       line-height: 22px;
       white-space: nowrap;
+    }
+
+    .download_menu li a:hover {
+        color: #06c;
     }
   
     .header_block2,
