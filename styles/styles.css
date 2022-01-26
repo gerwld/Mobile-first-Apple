@@ -70,6 +70,10 @@ body {
   a.inactive:hover {
     color: inherit!important;
 }
+
+.search-ic:hover {
+    cursor: pointer;
+}
   
   button {
     cursor: pointer;
