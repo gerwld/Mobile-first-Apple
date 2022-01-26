@@ -62,7 +62,8 @@ body {
   }
   
   input[type="button"]:focus,
-  input[type="search"]:focus {
+  input[type="search"]:focus,
+  button:focus {
     outline: none !important;
   }
   
@@ -501,9 +502,9 @@ body {
   
     /* Header menu */
   
-    .down_subnav {
+    /* .down_subnav {
       padding: 5px 20px 20px 25px;
-    }
+    } */
     .header_mnmenu {
       width: 100%;
       min-width: 320px;
@@ -586,7 +587,7 @@ body {
       height: 22px;
       overflow: hidden;
       opacity: 0.5;
-      transform: scaleY(0.3);
+      transform: scaleY(0.5);
     }
   
     .header_search input {
@@ -747,13 +748,13 @@ body {
     }
   
     .download_menu {
+      padding: 5px 20px 20px 25px;
       position: relative;
-      visibility: hidden;
       z-index: 100;
       opacity: 0;
       overflow: hidden;
       transition: 0.8s cubic-bezier(0.28, 0.11, 0.32, 1) 0.4s;
-      transition-property: transform, opacity;
+      transition-property: transform, opacity, height;
       transform: translateY(-20px);
     }
   
@@ -765,16 +766,19 @@ body {
       background-color: rgba(255, 255, 255, 0.9);
     }
 
-    .download_menu,
     .down_subnav {
-        height: 0px;
-        visibility: hidden;
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 0.45s cubic-bezier(0.28, 0.11, 0.32, 1) 0.4s,
+        visibility 0.3s;
+    }
+
+    .header2_mb_open .down_subnav {
+        max-height: 300px;
     }
 
     .header2_mb_open .download_menu {
-        visibility: visible;
-        height: 350px;
-        height: auto;
+        max-height: 350px;
         opacity: 1;
         transform: translateY(0px);
     }
@@ -844,7 +848,7 @@ body {
   
   @media only screen and (min-width: 736px) and (max-width: 1068px) {
     body {
-      min-width: 768px;
+      min-width: 736px;
     }
   }
   
