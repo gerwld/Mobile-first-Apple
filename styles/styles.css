@@ -57,7 +57,7 @@ body {
   }
 
   .main_header a:hover {
-      text-decoration: none;
+      text-decoration: none!important;
   }
   
   a.inactive {
@@ -68,7 +68,7 @@ body {
   }
 
   a.inactive:hover {
-    color: inherit!important;
+    color: inherit;
 }
 
 .search-ic:hover {
@@ -86,7 +86,7 @@ body {
   input[type="button"]:focus,
   input[type="search"]:focus,
   button:focus {
-    outline: none !important;
+    outline: none!important;
   }
   
   .content-wrapper {
