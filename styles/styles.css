@@ -1,3 +1,9 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+}
+
 body {
     margin: 0;
     padding: 0;
