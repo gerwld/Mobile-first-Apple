@@ -1,6 +1,13 @@
 # Mobile-first-Apple
 New template, created with mobile-first principle. Design taken from Apple pages layout.
 
+
+## Features:
+- Zero of code/styles taken from apple.com (only HEX codes & font antialiasing)
+- Fully responsive
+- Smooth animations on mobile
+- Blurred bg on second header bar
+
 Link to the project: https://gerwld.github.io/Mobile-first-Apple/
 
 <br>
